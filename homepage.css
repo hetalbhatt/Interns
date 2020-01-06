@@ -1,0 +1,107 @@
+
+div.bg{
+background-image: url("bg4.jpg"); 
+height: 123%;  
+margin-top:3px; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ul{
+background-color:brown;
+	height:25px;
+	padding:5px;
+	margin-top: 0px;
+	margin-bottom:2px;
+}
+
+ul li{
+	list-style-type:none;	
+}
+ul li a{
+	text-decoration:none;
+	text-transform:uppercase;
+	float:left;
+	color:#fff;
+	margin-right:20px;
+	padding:3px 3px;
+}
+
+h1{
+	margin-top:3px;
+	margin-bottom: :3px;
+	margin-right:8px;	
+	padding-left: 15px;
+	padding:10px 5px;
+	font-style:arial;
+	color:green;
+	text-align:left;
+	font-size:30px;
+}
+p{
+	float:left;	
+	text-align:center;
+	margin:0;
+	padding:1em;
+}
+nav{		
+	text-align:center;
+	margin:0;	
+}
+
+nav h3{
+	float:left;
+	max-width:450px;
+	text-align:center;
+	margin:0;
+	color: white;
+	padding:1em;
+}
+
+
+article{
+	
+	border-left:1px solid gray;
+	text-align:center;
+	color: white;
+	overflow:hidden;
+}
+
+h2{	margin-top:3px;
+	margin-bottom: 8px;
+	margin-right:5px;
+	padding:3px 3px;
+	font-style:arial;
+	color:white;
+	text-align:left;
+}
+article h3{
+	float:left;
+	text-align:center;
+	margin-top: 0px;
+	padding-left: 3px;
+}	
+
+button{
+	position: center;
+	text-align: center;	
+	background-color:orange;
+	color:black;
+	padding: 5px 5px;
+
+}
+
+footer{
+
+	padding:7px;
+	color:white;
+	background-color:#000080;
+	clear:left;
+	text-align:left;
+}
+
+div.container{
+	width:100%;
+	border:1px solid gray;
+}

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            function check()
+            {
+                var p=document.getElementById('upass').value;
+                var u=document.getElementById('uname').value;
+
+                var max=12;
+                var min=6;
+                var length=p.length;
+
+                var r=/^[a-zA-Z0-9]+[a-zA-Z0-9,@,.,_]*$/;
+
+                if(p=="" || u=="")
+                {
+                    alert("Can not be blank");
+                }
+                
+                else if(length>=12 || length<=6)
+                {
+                   alert("Password Length must be between 6 to 12");
+                }
+               
+               else if(!r.test(u))
+                {
+                    alert("Please Enter Correct UserName");
+                }
+
+                else
+                {
+                    alert("Your Response Submitted");
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+        Enter UserName:<input type="text" id="uname">
+        Enter Password<input type="password" id="upass">
+        <input type="submit" onclick="check()">
+        </form>
+    </body>
+</html>
