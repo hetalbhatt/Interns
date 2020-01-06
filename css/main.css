@@ -1,0 +1,295 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* overflow-x: hidden; */
+    letter-spacing: 1px;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #bdc0c5;
+    animation: animate 3s linear;
+}
+
+#loader:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+#loader:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+#loader:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+@keyframes animate {
+    0% {
+        filter: brightness(0);
+    }
+    40% {
+        filter: brightness(20px);
+    }
+    80% {
+        filter: brightness(100px);
+    }
+    100% {
+        filter: brightness(400px);
+    }
+}
+
+#container {
+    display: none;
+}
+
+/* body {
+    background-color: beige;
+} */
+
+header {
+    background-color: orange;
+    color: white;
+    padding: 25px;
+    font-size: 1em;
+    display: flex;
+}
+
+#mob-nav, .nav-sym {
+    display: none;
+}
+
+.login {
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 25px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px gray;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+td {
+    color: white;
+    padding: 5px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+}
+
+.btn {
+    border: noon;
+    font-size: 1em;
+    background: linear-gradient(0deg, orange, white);
+    padding: 8px 20px 8px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, white, orange);
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#logo {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+article {
+    padding-left: 10px;
+    padding-top: 17px;
+    font-size: 2em;
+}
+
+nav {
+    background-color: rgb(231, 124, 124);
+    box-shadow: 0px 1px 3px 1px gray;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+nav ul {
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+#close-nav {
+    display: none;
+}
+
+ul li:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.active {
+    background-color: black;
+}
+
+.active a {
+    color: white;
+}
+
+.cover-image {
+    max-height: 500px;
+    width: 70%;
+}
+
+.content {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.side {
+    display: block;
+    width: 100%;
+    min-width: 180px;
+    height: 200px;
+}
+
+.side-area {
+    height: 10%;
+    width: 25%;
+}
+
+.news {
+    background-color: white;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 1px 5px 6px #ccc;
+}
+
+marquee {
+    padding-left: 20px;
+}
+
+marquee p {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.test {
+    box-shadow: 0px 3px 8px 4px gray;
+    background-color: orange;
+    margin-top: 30px;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+menu {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#mob-nav {
+    transition: 2s ease;
+}
+
+.tag {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.cart {
+    background-color: white;
+    width: fit-content;
+    display: block;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 6px 8px 10px 2px gray;
+}
+
+.cart:hover {
+    box-shadow: inset 0 0 10px gray;
+}
+
+.coffee-name {
+    margin-bottom: 10px;
+}
+
+.coffee-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+@media screen and (max-width:700px) {
+    nav {
+        display: none;
+    }
+    header {
+        font-size: 0.7rem;
+    }
+    .news {
+        margin: 30px;
+    }
+    .cover-image {
+        width: 100%;
+    }
+    .nav-sym {
+        background-color: white;
+        color: orange;
+        padding: 8px;
+        font-size: 20px;
+        border-radius: 5px;
+        display: block;
+        float: right;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    #mob-nav ul li {
+        display: block;
+    }
+    .side {
+        max-width: fit-content;
+    }
+    .side-area {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+    }
+}

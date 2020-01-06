@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Login Page</title>
+    <script>
+        
+            function Login(form) {
+                var username = form.username.value;
+                var pwd = form.pwd.value;
+    
+                if(pwd == 'bharat') {
+                    window.open("home.html");
+                }
+                else{
+                    alert("Username & Password are in correct");
+                }
+            }
+    
+        </script>
+</head>
+
+<body>
+    <header style="box-shadow: 0px 2px 6px 1px gray;">
+        <h3>Welcome to Joe's Store Login Page</h3>
+    </header>
+
+    <div class="login" >
+        
+            <form action="" onSubmit="return Login(this)" >
+                <table>
+                    <tr>
+                        <td><label>Username </label></td>
+                        <td>:</td>
+                        <td><input type="email" name="username" id="username" placeholder="Email OR Phone Number" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password </label></td>
+                        <td>:</td>
+                        <td><input type="password" name="pwd" id="pwd" placeholder="bharat" title="bharat"  required/></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align: center;"><input type="submit" value="Login" class="btn"></td>
+                    </tr>
+                </table>
+
+              </form>
+    </div>
+
+    <footer style="position: fixed; bottom: 0px;">
+        <small>&copy; Copyright 2020, Bharat Padhiyar</small>
+    </footer>
+
+    
+
+</body>
+
+</html>
