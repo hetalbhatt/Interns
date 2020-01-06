@@ -1,0 +1,21 @@
+{
+  "name": "coffee",
+  "version": "1.0.0",
+  "description": "Coffee Website Template",
+  "author": "Punya Kotecha",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0",
+    "vue-masonry": "^0.11.8"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0"
+  }
+}
