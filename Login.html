@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <script>
+            function check()
+            {
+                var p=document.getElementById('name1').value;
+                var u=document.getElementById('name2').value;
+
+                var max=12;
+                var min=6;
+                var length=p.length;
+
+                var r=/^[a-zA-Z0-9]+[a-zA-Z0-9,@,.,_]*$/;
+
+                if(p=="" || u=="")
+                {
+                    alert("Can not be blank");
+                }
+                
+                else if(length>=12 || length<=6)
+                {
+                   alert("Password Length must be between 6 to 12");
+                }
+               
+               else if(!r.test(u))
+                {
+                    alert("Please Enter Correct UserName");
+                }
+
+                else
+                {
+                    alert("Your Response Submitted");
+                }
+                
+            }
+        </script>
+    <style>
+        .register
+        {
+            text-align:center; 
+
+        }
+       
+        table
+        {
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            background-color: #659DBD;
+        }
+
+        .c1
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+    </style>
+
+    <title>
+            Login Page
+    </title>
+    </head>
+    <body class="c1">
+        <div class="register">
+             <h2>Login Here</h2><br><br><br>
+             <table border="5px" align="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <form action="FirstPage.html" method="post" id="firstpage">
+                            <label>User Name:</label>
+                                <input type="text" name="uname" id="name1" placeholder="Enter your User Name"><br> <br>
+                            <label>Password:</label>
+                                <input type="Password" name="upass" id="name2" placeholder="Enter your Password"><br><br><br>
+                
+                                <input type="submit" value="Submit" id="sub" onclick="check()"><br><br>
+
+                                <a href="#" style="color: brown">Not Have Account? Sign Up here!!!</a>
+                        </form>
+                    </td>
+                </tr>
+           </tbody>
+        </table>
+        </div>
+    </body>
+</html>
