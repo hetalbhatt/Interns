@@ -1,0 +1,174 @@
+/* Styling for homepage */
+body{
+    background-image: url("https://besthqwallpapers.com/Uploads/21-5-2019/93044/thumb2-light-brown-paper-texture-paper-background-retro-brown-background-paper-textures.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-color: 	#DEB887;
+}
+.logo-bar{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+  
+}
+.logo{
+   width: 100px;
+   height: 100px;
+}
+
+.logo-bar p{
+  color: brown;
+  font-size: 50px;
+  font-family: 'Lucida Sans';
+  font-weight: bold;
+  text-align: justify;
+}
+nav{
+   float:left;
+   width: 100%;
+  
+}
+ul{
+   padding-left: 0px;
+   margin-top: 0px;
+   background-color:	#F4A460;
+  
+}
+ul li{
+   display: inline-block;
+   padding:20px;
+   font-size:15px; 
+   font-family:raleway;
+   text-decoration: underline;
+   border-top: 10px black;
+   
+ }
+ 
+ ul li:hover{
+   background-color:#DEB887;
+   border-bottom: 3px solid #A0522D	;
+   
+ }
+ ul li:active{
+   background-color:#CD853F;
+   
+ }
+
+ .column1{
+  height: 13vw;
+  width: 70%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.column2{
+  margin-left: 1em;
+  height: 13vw;
+  width: 30%;
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image2{
+  width: 100%;
+  height: 35vw;
+}
+.image1{
+  width: 100%;
+  height: 35vw;
+}
+.row {
+  display: flex;
+  flex-direction: row;  
+  width: 100%;
+  height: 25vw;
+} 
+.caption{
+  display: block;
+}
+.grid-container{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.coffee-1{
+  padding: 20px;
+  text-align: center;
+}
+
+.types p{
+  margin-top: 8em;
+}
+ #p1{
+  font-size: 50px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color:#800000;
+  text-decoration: underline;
+}
+.imgbtn{
+ width:100%;
+ height:80px;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+}
+#btn:hover{
+  color: #F4A460;
+}
+.footer{
+  left:0;
+  bottom:0;
+  width:100%;
+  color:white; 
+  background-color: #D2691E;
+  height: 3.5em;
+  display: inline-block;
+  font-weight: bold;
+  font-style: italic;
+}
+.coffeetype{
+    width: 500px;
+    background-color: rgba(1, 1, 20, 0.6);
+    margin: 200px auto;
+    border-radius: 10px;
+    border: 20px ridge 	#A0522D;
+    box-shadow: 0 0 20px 5px #000;
+    
+}
+.detail{
+    width: 100%;
+    padding-top: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+    display: inline-flex;
+}
+.imagedetails{
+width: 30%;
+height: 20%;
+padding-left: 1em;
+padding-bottom: 1em;
+}
+/* Query for making homepage responsive */
+   @media only screen and (max-width:500px) {
+    .logo-bar, .row, .column1,.column2,.types,.coffee-1,.imgbtn {
+      width: 100%;
+    }
+    .grid-container{
+      display: table;
+      grid-gap: 50px;
+      grid-template-columns: auto auto auto;
+      padding: 10px;
+    }
+    .divNav nav ul li{
+      display: table;
+      width: 100%;
+      justify-content: flex-start;
+   }
+  }
+  

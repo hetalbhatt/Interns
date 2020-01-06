@@ -1,0 +1,26 @@
+<!-- Login Page html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="loginpage.css" />
+    <meta name="author" content="Janvi Patel">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Login Page</title>
+    <script type="text/javascript" src="loginvalidation.js"></script>
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="info">Log In</div>
+        <form onsubmit="return validate()" action="webpage.html" method="post" class="form-box">
+            <input type="text" name="username" id="uname" class="inp" placeholder="username"><br>
+            <label id="lbuser" style="color:red;visibility: hidden;"></label>
+            <input type="password" name="pass" id="pass" class="inp" placeholder="********"><br>
+            <button type="submit" class="sub-btn">Submit</button><br>
+        </form>
+    </div>
+</body>
+
+</html>

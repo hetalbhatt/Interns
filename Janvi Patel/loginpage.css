@@ -1,0 +1,110 @@
+/* Styling for Login Page */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body{
+    background-repeat: no-repeat;
+   -webkit-background-size:cover;
+    background-size: cover;
+    background-image: url('https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/espresso-ground-coffee-beans-1296x728.jpg?w=1155&h=1528');
+    background-position: center;
+    background-attachment: fixed;
+}
+.login-box{
+    width: 500px;
+    background-color: rgba(1, 1, 20, 0.6);
+    margin: 200px auto;
+    border-radius: 10px;
+    border: 20px ridge 	#A0522D;
+    box-shadow: 0 0 20px 5px #000;
+    
+}
+    
+.info{
+    width: 100%;
+    padding-top: 10px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+.form-box{
+    padding: 25px;
+}
+.inp{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+.inp:focus{
+    outline: none;
+    border-bottom: 2px solid dark brown;
+    color: #000;
+}
+.sub-btn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    background: linear-gradient(#CD853F,#D2691E);
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 2px solid #000;
+    text-shadow: 1px 1px 1px #000;
+}
+.sub-btn:hover{
+    background: linear-gradient(#DEB887,#8B4513);
+    -webkit-transition: all .0.3s;
+    -o-transition: all .0.3s;
+    transition: all .0.3s;
+}
+.sub-btn:focus{
+    outline: none;
+    box-shadow: 2px 2px 5px 0 #000 inset;
+}
+.rem{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+}
+span{
+    color: #fff;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: 12px;
+    text-shadow: 1px 1px 1px #000;
+}
+.f-pass{
+    float: right;
+    margin-top: 12px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+#logo{
+	position:fixed;
+	top:0;
+    left:0;
+    height:30px;
+    width:10px;
+   
+}
+@media(max-width: 720px){
+    .login-box,.info{
+        width: 90%;
+        border: 10p #8B4513;
+    }
+
+}
