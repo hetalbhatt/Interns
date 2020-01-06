@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coffee-Store</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link href="nextstyle.css" rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="main-head">  </header>
+        <div class="text">It was said that coffee was discovered by a goat herder in Ethiopia in the 1500s.  He saw his goats eating coffee cherries. Afterwards, he observed a change in their behavior. They gained a high amount of energy and they didn’t sleep at night.  The herder shared his findings with local monks and then after they made a drink with coffee beans, they realized they could stay up all night and pray. Then, they spread the word to other Ethiopian monks and it reached across the civilized world.</div>
+    </div>
+
+    <script>
+        const query = {};
+        const vars = window.location.search.substring(1).split('&');
+        vars.forEach(v => {
+            const pair = v.split('=');
+            query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1])
+        })
+
+        console.log(query);
+
+        const img =document.createElement("IMG");
+        img.src = "https://picsum.photos/700/700?image="+ query.id
+        const main = document.querySelector(".main-head")
+        main.appendChild(img)
+
+        const text = `<h3>${query.text}</h3><p>${query.subText}</p>`
+        const coffeeItem = document.createElement("div");
+        coffeeItem.innerHTML = text
+        main.appendChild(coffeeItem)    
+        
+        
+    </script>
+</body>
