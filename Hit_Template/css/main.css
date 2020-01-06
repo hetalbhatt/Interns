@@ -1,0 +1,88 @@
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+#logo{
+	margin-left: 25px;
+	margin-top: 2px;
+}
+
+#header{
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+#coffee {
+	background: url(../img/menu-bg.jpg) center;
+	background-size: cover;
+}
+#about{
+	background-color: #FAFAFA;
+}
+
+#contactus{
+    background-color:#9E9E9E;
+	background-size: cover;
+}
+
+
+.banner-area {
+  background: url(../img/header-bg.jpg) center;
+  background-size: cover;
+  height: 800px !important;
+}
+
+@media (max-width: 1199.98px) {
+  .banner-area .fullscreen {
+    height: 800px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-area {
+
+    background: url(../img/header-bg.jpg);
+    background-position: 50% 90% 50% 50%;
+  }
+}
+
+.banner-content{
+	margin-top: 200px;
+}
+
+.primary-btn {
+  background: #fff;
+  border: 1px solid transparent;
+  color: #222;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 50px;
+}
+
+.primary-btn:hover {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
