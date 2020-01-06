@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Joe's LogIn Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<script>
+  		function checkPassword(){
+  			var mail=document.getElementById("username").value;
+  			var password=document.getElementById("Password").value;
+  			if(password == "abc")
+  			{
+  				window.open("home.html");
+  			}
+  			else
+  			{
+  				alert("Invalid User Name or Password");
+  			}
+  		}
+  	</script>
+
+</head>
+<body>
+	<center>
+	<div class="form">
+		<p>Joe's Coffee Store &trade;</p>
+		<form action="" method="post" target="">
+		<span style="color:white;" class="glyphicon glyphicon-user"></span>&nbsp <input type="mail" id="username" name="mail" placeholder="User Name" size="25" required><br><br><br>
+		<span style="color:white;" class="glyphicon glyphicon-lock"></span>&nbsp <input type="text" id="Password" name="Password" placeholder="Password" size="25" required><br><br><div style="text-align: center; size: 10px; font-size: 12px; color: white;">Forgot Password?</div><br><br><br>
+		<center><button onclick="checkPassword()"><b>SIGN IN</b></button></center>
+		<br><br><div style="text-align: center; size: 10px; font-size: 12px; color: white;">New User ?<br> Please Sign Up first</div><br>
+	    </form>
+	</div>
+	</center>
+	<div class="footer">
+	 	<p>Joe's Coffee Store<br>Copyright © 2020 Joe's Coffee Store. All Rights Reserved</p>
+  </div>
+</body>
+</html>

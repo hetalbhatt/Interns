@@ -1,0 +1,370 @@
+/*CSS for Index.HTML Page*/
+/*CSS for Header Side Logo and Text*/
+body{
+	overflow-x:hidden;
+}	
+.header{
+	display: flex;
+}
+.header-title{
+	font-family: sofia;
+	font-size: 30px;
+}
+.header img{
+	border-radius: 90%;
+	width:150px;
+    height:150px;
+}
+#myTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  border-radius: 50%;
+}
+
+#myTopBtn:hover {
+  background-color: #555;
+}
+/*CSS for navigation bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.9;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-family: sofia;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.offers{
+	position: flex;
+	font-family: sofia;
+	color: black;
+	font-size:30px;
+}
+/*CSS for Image Banner*/
+.center-banner-container{
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 1%;
+  box-shadow: 10px 10px 5px grey;
+}
+/*CSS for Joe's Coffee shop quote*/
+.coffee-quote-container{
+	display: inline-flex;
+
+}
+.coffee-quote-container p {
+	text-align: center;
+	background-color: black;
+	opacity: 0.9;
+	display: inline-flex;
+	color: white;
+	width:950px;
+	height:140px;
+	font-family: sofia;
+	font-size: 25px;
+}
+.news-in-quote-container{
+	background-color: black;
+	opacity: 0.9;
+	position: relative;
+	display: inline-flex;
+	color: white;
+	width: 350px;
+	height:140px;
+	font-family: sofia;
+	font-size: 25px;
+}
+.news-in-quote-container p{
+	font-family: sofia;
+	color:white;
+
+}
+/*CSS add to cart*/
+.add-to-cart-container {
+     margin: 40px;
+     float: left;
+     width: 150px;
+     display: inline-block;
+}
+
+.coffee-image {
+  margin: 30px;
+  opacity: 0.9;
+  display: inline-block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 70%; 
+}
+
+.coffee-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: flex;
+  transform: translate(-40%, -40%);
+  -ms-transform: translate(-40%, -40%);
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.add-to-cart-container:hover .coffee-image {
+  opacity: 0.3;
+}
+
+.add-to-cart-container:hover .coffee-middle {
+  opacity: 1;
+}
+
+.coffee-image-text {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 90%;
+  display: inline-block;
+}
+
+/*.add-to-cart{
+	 margin: 80px;
+     float: left;
+     width: 180px;
+     display: inline-block;
+}
+.add-to-cart img:hover {
+  background-color: black;
+  opacity: 0.9;
+}
+.add-to-cart button{
+  height: 50px;
+  width: 100px;
+  background-color: #4dff4d;
+  border-radius: 50%;
+
+}*/
+.footer{
+	position: static;
+	display: flex;
+	width: 100%;
+	background-color: black;
+	opacity: 0.9;
+	text-align: left;	
+	
+}
+.footer p{
+	color: white;
+	font-family: sofia;
+	font-size: 15px;
+	margin-left: 2%;
+}
+/*CSS for LogIn.HTML Page*/
+.form{
+	background-color: black;
+	text-align: center;
+	display: table;
+	opacity: 0.89;
+	margin:80px;
+	width: 30%;
+	height:60%;
+	box-shadow: 10px 10px 5px grey; 	
+}
+.form input{
+	background-color: black;
+	text-decoration-color: white;
+	display: table-cell;
+	opacity:0.5;
+	height: 40px;
+	width: 80px
+	margin: 100px;
+	box-shadow: 5px 5px 2px blue;
+}
+.form p{
+		font-family: sofia;
+		font-size: 30px;
+		color: white;
+		margin:40px;
+}
+.form button{
+	color:black;
+	border-radius: 10px;
+	width:50%;
+	display: table-cell;
+	text-decoration-color: black;
+}
+.coffee-shop-login-banner{
+}
+/* Target Devices Smart Phones as Majority would be */
+@media only screen and (max-width: 600px ){
+
+.header{
+	display: flex;
+}
+.header-title{
+	font-family: sofia;
+	font-size: 20px;
+}
+nav[role="full-horizontal"] {
+    ul > li {
+      width: flex;
+    }
+ }
+.offers{
+	position: flex;
+	font-family: sofia;
+	color: black;
+	font-size:15px;
+}
+.center-banner-container{
+  	display: none;
+ }
+.coffee-quote-container{
+	display: inline-block;
+}
+.coffee-quote-container p {
+	text-align: center;
+	display: block;
+	background-color: black;
+	opacity: 0.9;
+	display: flex;
+	color: white;
+	width:100%;
+	height:100%;
+	font-family: sofia;
+	font-size: 15px;
+}
+.news-in-quote-container{
+	background-color: black;
+	opacity: 0.9;
+	display: flex;
+	color: white;
+	width: 100%;
+	height:100%;
+	font-family: sofia;
+	font-size: 15px;
+}
+.news-in-quote-container p{
+	font-family: sofia;
+	color:white;
+}
+.add-to-cart-container {
+     margin: 40px;
+     float: left;
+     width: 100px;
+     display: inline-block;
+}
+.coffee-image {
+  margin: 5px;
+  opacity: 0.9;
+  display: inline-block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 40%; 
+}
+.coffee-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: flex;
+  transform: translate(-30%, -30%);
+  -ms-transform: translate(-30%, -30%);
+  display: inline-block;
+  margin-right: 0.5%;
+}
+.add-to-cart-container:hover .coffee-image {
+  opacity: 0.3;
+}
+.add-to-cart-container:hover .coffee-middle {
+  opacity: 1;
+}
+.coffee-image-text {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  font-size: 10px;
+  padding: 3px 3px;
+  border-radius: 60%;
+  display: inline-block;
+}
+.form{
+	background-color: black;
+	text-align: center;
+	display: table;
+	margin-right: 0.1%;
+	margin-left: 0.1%;
+	margin-top: 30%;
+	margin-bottom: 30%;
+	opacity: 0.89;
+	width: 10%;
+	height:20%;
+	box-shadow: 10px 10px 5px grey;
+}
+.form input{
+	background-color: black;
+	color:  white;
+	display: table-cell;
+	opacity:0.5;
+	height: 20px;
+	width: 10px
+	margin-left:0.5%;
+	margin-right: 0.5%;
+	box-shadow: 3px 3px 2px blue;
+}
+.form p{
+		font-family: sofia;
+		font-size: 20px;
+		color: white;
+		margin:30px;
+}
+.form button{
+	color:black;
+	border-radius: 10px;
+	width:30%;
+	display: table-cell;
+	text-decoration-color: black;
+}
+.coffee-shop-login-banner{
+}
+.footer{
+	position: fixed;
+	bottom: 0;
+	right:0;
+	width: 100%;
+	background-color: black;
+	opacity: 0.9;
+	text-align: left;	
+	display: center;
+}
+.footer p{
+	color: white;
+	font-family: sofia;
+	font-size: 10px;
+	text-align: left;
+	margin-left: 1%;	
+}
+
+}
