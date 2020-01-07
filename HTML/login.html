@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Login Page</title>
+</head>
+<body>
+<form name="loginForm" method="post" action="login.html">
+<table width="100%" bgcolor="0099CC" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Joe's Coffee Store Login Page</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td ><input type="Reset"></td>
+<td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "123" && form.pwd.value == "123")
+{
+	//return true;
+	//setTimeout(function() {window.location = "http://www.google.com/" });
+	setTimeout(function() {window.location = "Joe.html" });
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+</body>
+</html>
